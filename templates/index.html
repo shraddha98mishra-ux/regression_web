@@ -1,0 +1,28 @@
+<html>
+<body style="text-align:center">
+
+<h1>Interactive Regression</h1>
+
+<form method="post">
+<select name="model">
+<option>OLS</option>
+<option>Ridge</option>
+<option>Lasso</option>
+<option>Elastic</option>
+</select>
+
+<input type="number" step="0.1" name="lambda" value="1">
+<button>Train</button>
+</form>
+
+{% if trained %}
+<p>Weights: {{ coef }}</p>
+<p>MSE: {{ mse }}</p>
+<p>R2: {{ r2 }}</p>
+
+<img src="/static/weights.png">
+<img src="/static/mse.png">
+{% endif %}
+
+</body>
+</html>
