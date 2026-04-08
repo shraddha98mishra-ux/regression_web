@@ -13,7 +13,6 @@ Users can input parameters and instantly view model results and visualizations.
 - 🔹 Displays:
   - Coefficients
   - Mean Squared Error (MSE)
-  - R² Score
 - 🔹 Graphical visualization of results
 - 🔹 Simple and clean UI using Flask templates
 
